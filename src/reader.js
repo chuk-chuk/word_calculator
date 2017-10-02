@@ -3,7 +3,8 @@
 
   Reader.prototype.fromFile = function(fileName) {
     fs = require('fs');
-    return fs.readFileSync(fileName, 'utf8');
+    var contents = fs.readFileSync(fileName, 'utf8');
+    return contents.toLowerCase();
   }
 
   exports.Reader = Reader;
