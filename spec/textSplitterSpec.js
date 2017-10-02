@@ -32,4 +32,18 @@ describe('text splitting', function(){
     expect(splitter.toArray()).toEqual(expectedResult);
   });
 
+  it('considers __text__ to be one word', function(){
+    var textSample = 'Of __course__ Mothers never have favourites';
+    var expectedResult = [
+      'Of',
+      '__course__',
+      'Mothers',
+      'never',
+      'have',
+      'favourites'
+    ];
+
+    var splitter = new TextSplitter(textSample);
+    expect(splitter.toArray()).toEqual(expectedResult);
+  });
 });

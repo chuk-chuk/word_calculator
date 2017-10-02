@@ -4,7 +4,7 @@
   }
 
   TextSplitter.prototype.toArray = function() {
-    return this.text.match(/\b(\w+)\b/g);
+    return this.text.match(/\b(\w+|_)\b/g);
   }
 
   exports.TextSplitter = TextSplitter;
