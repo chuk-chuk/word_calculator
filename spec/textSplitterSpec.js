@@ -46,4 +46,12 @@ describe('text splitting', function(){
     var splitter = new TextSplitter(textSample);
     expect(splitter.toArray()).toEqual(expectedResult);
   });
+
+  it('it returns empty for the empty string', function(){
+    var textSample = '';
+    var expectedResult = [];
+
+    var splitter = new TextSplitter(textSample);
+    expect(splitter.toArray()).toEqual(expectedResult);
+  });
 });

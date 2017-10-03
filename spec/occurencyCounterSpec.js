@@ -30,4 +30,12 @@ describe('count occurencies', function(){
 
     expect(counter.calculate(input)).toEqual(expectedResult);
   });
+
+  it('it returns empty is the input is empty', function(){
+    var input = [];
+
+    var expectedResult = [];
+
+    expect(counter.calculate(input)).toEqual(expectedResult);
+  });
 });
