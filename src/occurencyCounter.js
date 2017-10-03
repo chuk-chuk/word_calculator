@@ -10,7 +10,6 @@
       }
       return prev;
     }, {});
-    console.log(countedWords);
     return countedWords;
   }
 

@@ -33,9 +33,7 @@ describe('count occurencies', function(){
 
   it('it returns empty is the input is empty', function(){
     var input = [];
-
     var expectedResult = [];
-
     expect(counter.calculate(input)).toEqual(expectedResult);
   });
 });
